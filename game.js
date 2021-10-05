@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 import { 
     update as updateSnake,
@@ -17,6 +17,8 @@ import { outsideGrid } from './grid.js';
 let lastRenderTime = 0;
 let gameOver = false;
 const gameBoard = document.getElementById('game-board');
+
+localStorage.getItem('highScore') ? null : localStorage.setItem('highScore', 0);
 
 function main(currentTime) {
     if(gameOver) {
