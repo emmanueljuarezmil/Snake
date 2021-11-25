@@ -6,6 +6,8 @@ body {
   align-items: center;
   margin: 0;
   background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
 }
 
 #game-board {
@@ -22,13 +24,47 @@ body {
   z-index: 10;
   color: #000;
   font-size: 4vmin;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 700;
   position: absolute;
   display: flex;
   top: 2%;
   width: 100vmin;
   justify-content: space-evenly;
+}
+
+#game-difficult {
+  z-index: 10;
+  position: absolute;
+  width: 90vmin;
+  height: 100vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  opacity: .95;
+}
+
+#game-difficult-span {
+  font-size: 3vmin;
+  padding: 5vmin;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3vmin;
+  margin-bottom: 3vmin;
+}
+
+#game-difficult-options {
+  padding: 5vmin;
+}
+
+#game-difficult-options > span {
+  padding: 5vmin;
+  font-size: 4vmin;
+  border-radius: 2vmin;
+}
+
+#game-difficult-options > span:hover {
+  background-color: #ddd;
+  cursor: pointer;
 }
 
 .snake {

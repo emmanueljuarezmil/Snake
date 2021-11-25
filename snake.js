@@ -2,8 +2,7 @@
 
 import { getInputDirection } from "./input.js";
 import { updateScore } from "./score.js";
-
-export const SNAKE_SPEED = 4;
+import { INCREASE_VELOCITY, incrementSpeed } from "./game.js";
 
 const snakeBody = [{ x: 11, y: 11 }];
 let newSegments = 0;
@@ -38,7 +37,8 @@ export function expandSnake(amount) {
     highScore = score;
     localStorage.setItem("highScore", score);
   }
-  updateScore(score, highScore)
+  if (score % INCREASE_VELOCITY.points === 0) incrementSpeed();
+  updateScore(score, highScore);
 }
 
 export function onSnake(position, { ignoreHead = false } = {}) {
