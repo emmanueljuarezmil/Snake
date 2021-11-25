@@ -15,11 +15,25 @@ body {
   display: grid;
   grid-template-columns: repeat(21, 1fr);
   grid-template-rows: repeat(21, 1fr);
+  z-index: 5;
+}
+
+#game-info {
+  z-index: 10;
+  color: #000;
+  font-size: 4vmin;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  position: absolute;
+  display: flex;
+  top: 2%;
+  width: 100vmin;
+  justify-content: space-evenly;
 }
 
 .snake {
   background-color: hsl(200, 100%, 50%);
-  border: 0.25vmin solid black;
+  border: 0.35vmin solid black;
 }
 
 .food {

@@ -1,6 +1,7 @@
 "use strict";
 
 import { getInputDirection } from "./input.js";
+import { updateScore } from "./score.js";
 
 export const SNAKE_SPEED = 4;
 
@@ -37,6 +38,7 @@ export function expandSnake(amount) {
     highScore = score;
     localStorage.setItem("highScore", score);
   }
+  updateScore(score, highScore)
 }
 
 export function onSnake(position, { ignoreHead = false } = {}) {
