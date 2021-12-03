@@ -6,4 +6,4 @@
 <img  align="center"  src="./img/Screenshot1.png"  width="45%"  />
 <img  align="center"  src="./img/Screenshot2.png"  width="45%"  />
 </p>
-<p>Podes echarte unas partidas acá / You can play here 😉😉😉: <a  href="https://elgramofono.vercel.app/"  target="_blank"  rel="noopener">Snake</a></p>
+<p>Podes echarte unas partidas acá / You can play here 😉😉😉: <a  href="https://snake-emmanueljuarez.vercel.app/"  target="_blank"  rel="noopener">Snake</a></p>
