@@ -50,13 +50,13 @@ for (let difficultSelector of difficultSelectors) {
   difficultSelector.addEventListener("click", (e) => {
     switch (e.target.innerHTML) {
       case "Fácil":
-        setDifficult(4, 1, 1, 2);
+        setDifficult(5, 1, 1, 2);
         break;
       case "Medio":
-        setDifficult(3, 2, 1, 3);
+        setDifficult(4, 2, 1, 3);
         break;
       case "Crazy":
-        setDifficult(4, 2, 2, 4);
+        setDifficult(3, 2, 2, 4);
         break;
     }
     const gameDifficult = document.getElementById("game-difficult");
